@@ -1,3 +1,3 @@
-variable "access_key" {default = "AKIAI66RQTLYQ7GZSWYA"}
-variable "secret_key" {default = "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"}
-variable "public_key" {default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDqF/qgb4NPJgpRUTxMOreOp51Xty+wKEUOYQ3iEKLB6a/xB2StkiQE+hS/iO2rkb7HjBPhtJNS7qSaExRwCNx7LK8nid7lZXWgVrdtpq9Y1naxKD8v346FrVGGPhMb3WGUME2Efxvcgy8iqBjTsiuG5HZ7eT6TOIhIS6daJbW1oNJeaWpg7cRFRT3BA0J37ERANJCuRsr5MUY2ph73QCym9Nit0Ui4x8XvbQq8eSzabSBrPYES3XZekYznwKXpN7wjHJiQeeaq1X9mkTgFvuLGodXGOTDpw4v7r5UbxGOYfH6yftTQ/BfgR6K3s2cwGD0a6KuYOCLAKPe/xUGA7hq1 jvance@slcdevopsdays.org"}
+variable "access_key" {default = ""}
+variable "secret_key" {default = ""}
+variable "public_key" {default = ""}
