@@ -1,4 +1,9 @@
 variable "private_subnets_ids" { }
+variable "r53_zone_id"         { }
+variable "environment"         { }
+variable "region"              { }
+variable "service"             { }
+
 
 # resource "aws_instance" "web_server" {
 #   #busybox default on Ubuntu
@@ -94,7 +99,13 @@ resource "aws_elb" "web_server_elb" {
     instance_protocol   = "http"
   }
 }
-
+resource "aws_route53_record" "http-host" {
+   zone_id = "${var.r53_zone_id}"
+   name = "${var.environment}-${var.region}-${var.service}.jasonvance.systems."
+   type = "A"
+   ttl = "300"
+   records = ["${aws_elb.web_server_elb.dns_name}"]
+}
 output "elb_dns_name" {
   value = "${aws_elb.web_server_elb.dns_name}"
 }
