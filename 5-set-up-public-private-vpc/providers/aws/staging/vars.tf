@@ -1,8 +1,8 @@
 #provide access to your system
-variable "access_key"               {default = ""}
-variable "secret_key"               {default = ""}
-variable "public_key"               {default = ""}
-variable "key_name"                 { default = "id_rsa_slcdevopsdays"}
+variable "public_key"               {default = "your_public_key"}
+variable "shared_credentials_file"  { default = "~/.aws/credentials" }
+variable "profile"                  { default = "demonstration" }
+variable "key_name"                 { default = "your_key_name"}
 
 variable "environment"              { default = "staging" }
 variable "region"                   { default = "us-east-1" }

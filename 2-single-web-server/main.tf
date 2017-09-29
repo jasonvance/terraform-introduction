@@ -1,8 +1,8 @@
 provider "aws" {
   region = "us-east-1"
-  access_key = "${var.access_key}"
-  secret_key = "${var.secret_key}"
-}
+  shared_credentials_file = "${var.shared_credentials_file}"
+  profile                 = "${var.profile}"
+  }
 
 resource "aws_key_pair" "site_key" {
   key_name   = "id_rsa_slcdevopsdays"
